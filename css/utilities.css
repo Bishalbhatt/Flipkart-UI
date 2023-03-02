@@ -1,0 +1,96 @@
+.container{
+    display: flex;
+    justify-content: center;
+    margin: 10px 0px;
+}
+.container img{
+    width: 80%;
+}
+.cards{
+    background-color: #F0F0F0;
+    margin: 1vh 2vw;
+    padding: 1vh 1vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.card-container h2{
+    font-size: 3vh;
+    margin: 1vw;
+}
+.card{
+    height: 300px;
+    width: 400px;
+    border: 2px solid black;
+    padding: 0.6vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-weight: bold;
+    text-align: center;
+    margin: 3vw;
+    border-radius: 2vh;
+}
+.card img{
+    height: 18vh;
+    width: 15vw;
+    margin-bottom: 10px;
+}
+.card .btn{
+    height: 100px;
+    width: 250px;
+    background-color: aqua;
+    margin-top: 10px;
+    font-size: 1vw;
+    font-weight: bold;
+}
+.card p{
+    margin: 5px 0px;
+    font-size: 1.2vw;
+}
+.card .price{
+    color: rgb(224, 17, 252);
+}
+@media screen and (max-width: 900px){
+    .card{
+        height: 200px;
+        width: 300px;
+        margin: 2vw;
+    }
+    .card img{
+        height: 20vh;
+        width: 12vw;
+    }
+    .card .btn{
+        height: 80px;
+        width: 150px;
+        margin-top: 7px;
+        font-size: 1vw;
+    }
+    .card p{
+        margin: 5px 0px;
+        font-size: 1.5vw;
+    }
+}
+@media screen and (max-width: 600px){
+    .cards{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .card img{
+        height: 20vh;
+        width: 20vw;
+    }
+    .card .btn{
+        height: 80px;
+        width: 120px;
+        margin-top: 7px;
+        font-size: 2vw;
+    }
+    .card p{
+        margin: 5px 0px;
+        font-size: 2vw;
+    }
+}
